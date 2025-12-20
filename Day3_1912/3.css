@@ -8,6 +8,8 @@
 
 #navbar nav ul li {
     margin: 25px;
+    padding: 10px;
+    
 }
 
 #navbar nav ul li a {
@@ -50,3 +52,23 @@ p{
     justify-content: center;
     margin: 20px;
 }
+h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    
+}
+a:hover{
+    background-color: lightgreen;
+    color: white;
+}   
