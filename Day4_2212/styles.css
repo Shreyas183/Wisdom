@@ -1,0 +1,92 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: aqua;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu a {
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: rgba(205, 152, 255, 0.878);
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+section {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 1px grey;
+}
+
+section:hover {
+    background-color: darkblue;
+    box-shadow: 0px 4px 10px 6px grey;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(233, 233, 233);
+}
+
+section p {
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 20px;
+}
+
+#tle {
+    padding-left: 50px;
+    margin-top: 50px;
+    text-shadow: 4px 2px 2px rgb(250, 69, 69);
+}
+hr{
+    border: none;
+    height: 5px;
+    background-color: black;
+    margin: 20px 0;
+    box-shadow: 0px 2px 5px grey;
+    box-sizing: content-box;
+}
+hr:hover {
+    background-color: grey;
+    box-shadow: 0px 4px 10px grey;
+}
