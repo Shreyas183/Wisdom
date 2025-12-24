@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            background-color: aqua;
+            height: 25rem;
+            width: auto;
+            display: flex;
+            gap: 1rem;
+        }
+        .box{
+            /* background-color: blue; */
+            height: 100px;
+            width: 100px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            /* flex-grow: 2; */
+            background-color: orange;
+        }
+        #one{
+          order: 5;
+          flex-grow: 10px;
+        }
+        #two{
+            order: 3;
+            flex-basis: 50px;
+        }
+        #three{
+           order: 1;
+           flex-grow: 100px;
+        }
+        #four{
+            order: 2;
+            flex-flow: column;
+        }
+        #five{
+           order: 4;
+           align-content: baseline;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+    <div id="one" class="box">1.</div>
+    <div id="two" class="box">2.</div>
+    <div id="three" class="box">3.</div>
+    <div id="four" class="box">4.</div>
+    <div id="five" class="box">5.</div>
+    </section>
+    
+</body>
+</html>
