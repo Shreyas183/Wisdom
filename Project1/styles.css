@@ -329,29 +329,38 @@ h1 {
 }
 
 .footer section {
-   background: #fff;
+    background: #fff;
     padding: 50px 80px 20px;
     border-top: 1px solid #eee;
 }
-.top{
-         display: flex;
+
+.top {
+    display: flex;
     justify-content: space-between;
     gap: 40px;
 }
-footer .top div{
+
+footer .top div {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     gap: 10px;
 }
 
 
-.footer p{
+.footer p {
     color: #555;
     font-size: 15px;
 }
-.copy{
+
+.copy {
     text-align: center;
     margin-top: 40px;
     font-size: 14px;
     color: #777;
+}
+
+nav a:hover {
+    background-color: #00c6ff;
+    transition: 500ms;
+    border-radius: 3px;
 }
