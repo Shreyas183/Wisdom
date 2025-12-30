@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* .Parent {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            gap: 10px;
+        }
+
+        div {
+            background-color: aquamarine;
+            box-sizing: border-box;
+            display: grid;
+            height: 100px;
+            width: 100px;
+            grid-column-start: 6;
+            grid-column-end: 8;
+
+            grid-row-start:3 ;
+            grid-row-end: 4;
+        } */
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #wrapper {
+            width: 1024px;
+            margin: auto;
+            /* background-color: aqua; */
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 25px;
+            padding: 20px;
+
+        }
+
+        #wrapper li {
+            list-style: none;
+            border-left: 5px solid blue;
+            margin: 4px;
+            padding-left: 8px;
+
+        }
+
+        #wrapper li p {
+            font-size: medium;
+            padding: 5px;
+        }
+
+        #wrapper li button {
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width:980px){
+            #wrapper{
+                grid-template-columns: auto auto ;
+            }
+
+        }
+        @media screen and (max-width:800px){
+            #wrapper{
+                grid-template-columns: auto ;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <section class="Parent">
+        <div>
+        </div>
+    </section> -->
+    <h1>Stroy Line</h1>
+    <ul id="wrapper">
+        <li>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, asperiores.</p>
+            <button>more...</button>
+        </li>
+        <li>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, asperiores.</p>
+            <button>more...</button>
+        </li>
+        <li>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, asperiores.</p>
+            <button>more...</button>
+        </li>
+        <li>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, asperiores.</p>
+            <button>more...</button>
+        </li>
+        <li>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, asperiores.</p>
+            <button>more...</button>
+        </li>
+        <li>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, asperiores.</p>
+            <button>more...</button>
+        </li>
+        <li>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, asperiores.</p>
+            <button>more...</button>
+        </li>
+        <li>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, asperiores.</p>
+            <button>more...</button>
+        </li>
+        <li>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, asperiores.</p>
+            <button>more...</button>
+        </li>
+        <li>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, asperiores.</p>
+            <button>more...</button>
+        </li>
+
+        <li>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, asperiores.</p>
+            <button>more...</button>
+        </li>
+
+        <li>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, asperiores.</p>
+            <button>more...</button>
+        </li>
+
+    </ul>
+
+</body>
+
+</html>
