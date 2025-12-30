@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    padding: 1rem 0;
+    border: 2px dotted black;
+}
+
+#wrapper{
+    height: 900px;
+    width: 70%;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: space-between;
+ 
+}
+#wrapper .box{
+    height: 200px;
+    width: 200px;
+    margin: 4px;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.1s ease-in ;
+    filter: grayscale(100);
+    
+}
+
+#wrapper .box:hover{
+    scale: 1.1;
+    filter: grayscale(0);
+}
+#wrapper .box figure{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#wrapper .box figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#wrapper .box figure figcaption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 6px 0;
+    background-color: rgb(4, 24, 1);
+    color: whitesmoke;
+    z-index: 1;
+}
