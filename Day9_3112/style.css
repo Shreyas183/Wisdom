@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: aqua;
+    transition: all 1s ease;
+}
+
+h1:hover {
+    padding-right: 50%;
+    
+    background-color: blue;
+}
+
+.sun {
+    font-size: 150px;
+   
+    transition: transform 0.3s ease;
+}
+
+.sun:hover {
+    transform: translateY(80px);
+}
+.box{
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    margin: auto;
+}
+
+@keyframes box {
+    from {
+        background-color: red;7
+    }
+        
+    to {
+        background-color: yellow;
+       
+    }
+}
+
+.box {
+    animation: box 2s infinite;
+}
