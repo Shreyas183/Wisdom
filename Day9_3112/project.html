@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy New Year</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: system-ui, sans-serif;
+}
+
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: radial-gradient(circle at top, #1e235a, #07070c);
+    overflow:hidden;
+    color:white;
+}
+
+header{
+    position:absolute;
+    top:24px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    z-index:5;
+}
+
+.name{
+    font-size:1.8rem;
+    letter-spacing:6px;
+    font-weight:600;
+    position:relative;
+    animation: slideDown 1.5s ease;
+    transition: color .4s ease, transform .4s ease;
+}
+
+.name::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0%;
+    height:2px;
+    background:linear-gradient(90deg,#ffd166,#ff4d6d,#4ddcff);
+    transition: width .4s ease;
+}
+
+.name:hover{
+    color:#4ddcff;
+    transform: translateY(-4px);
+}
+
+.name:hover::after{
+    width:100%;
+}
+
+.light{
+    position:absolute;
+    inset:-20%;
+    background: radial-gradient(circle, rgba(0,255,255,0.12), transparent 45%);
+    animation: floatLight 10s ease-in-out infinite alternate;
+    z-index:1;
+}
+
+@keyframes floatLight{
+    from{ transform: translate(-5%, -5%); }
+    to{ transform: translate(5%, 5%); }
+}
+
+.firework{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:4px;
+    height:4px;
+    border-radius:50%;
+    box-shadow:
+        0 -70px #ff4d6d,
+        50px -50px #ffd166,
+        70px 0 #4ddcff,
+        50px 50px #ff8c42,
+        0 70px #6fff95,
+        -50px 50px #c77dff,
+        -70px 0 #4ddcff,
+        -50px -50px #ffd166;
+    animation: fire 3.5s infinite;
+    z-index:2;
+}
+
+@keyframes fire{
+    0%{ transform:translate(-50%, -50%) scale(.3); opacity:1; }
+    70%{ transform:translate(-50%, -50%) scale(1.2); }
+    100%{ transform:translate(-50%, -50%) scale(1.6); opacity:0; }
+}
+
+
+.card{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+    padding:64px 96px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.05);
+    transition: transform .6s ease;
+    z-index:3;
+}
+
+.card:hover{
+    transform: translateY(-12px);
+}
+
+
+h1{
+    font-size:3.6rem;
+    transition: transform 1s ease;
+}
+h1:hover{
+    color:#4ddcff;
+   
+   transition: transform 1s ease;
+    
+}
+
+.year{
+    font-size:6.2rem;
+    font-weight:800;
+    background:linear-gradient(90deg,#ffd166,#ff4d6d,#4ddcff);
+    color:transparent;
+    background-clip:text;
+    animation: glow 2.6s infinite alternate;
+    z-index:4;
+}
+
+.subtitle{
+    font-size:1.1rem;
+    color:#d6d8ef;
+}
+
+@keyframes glow{
+    from{ text-shadow:0 0 18px #ff4d6d; }
+    to{ text-shadow:0 0 55px #4ddcff; }
+}
+
+@keyframes slideDown{
+    from{ transform: translateY(-40px); opacity:0; }
+    to{ transform: translateY(0); opacity:1; }
+}
+
+
+@media(max-width:600px){
+    .card{ padding:40px }
+    h1{ font-size:2.6rem }
+    .year{ font-size:4.6rem }
+    .name{ font-size:1.4rem }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="name">From Shreyas</div>
+</header>
+
+<div class="light"></div>
+<div class="firework"></div>
+
+<div class="card">
+    <h1>Happy New Year</h1>
+    <div class="year">2026</div>
+    <div class="subtitle">
+        Clean depth • Smooth motion • Fresh start
+    </div>
+</div>
+
+</body>
+</html>
