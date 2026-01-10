@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML CSS Tasks</title>
+
+<style>
+
+/* Q1 */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 40px;
+    background: #f4f6f8;
+}
+section {
+    margin-bottom: 80px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Q1 */
+.login-bg {
+    background: url("https://images.unsplash.com/photo-1517816428104-797678c7cf0f");
+    background-size: cover;
+    padding: 60px 0;
+}
+.login-box {
+    width: 320px;
+    margin: auto;
+    background: rgba(255,255,255,0.95);
+    padding: 25px;
+    border-radius: 10px;
+}
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg,#007bff,#0056b3);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Q2 */
+.product-card {
+    width: 280px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.product-card button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg,#28a745,#1e7e34);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.product-card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Q3 */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+.modal {
+    background: white;
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 150px auto;
+    animation: pop 0.3s ease;
+}
+@keyframes pop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-header button {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.open-modal-btn {
+    padding: 12px 25px;
+    background: linear-gradient(135deg,#007bff,#0056b3);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.open-modal-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Q4 */
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.plan {
+    width: 220px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.plan:hover {
+    transform: translateY(-5px);
+}
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+.plan li {
+    padding: 5px 0;
+}
+.plan button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+.premium {
+    border: 2px solid gold;
+    transform: scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Q1 -->
+<section class="login-bg">
+    <h2>Login Form</h2>
+    <div class="login-box">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <div class="remember">
+            <input type="checkbox">
+            <label>Remember Me</label>
+        </div>
+        <button>Login</button>
+    </div>
+</section>
+
+<!-- Q2 -->
+<section>
+    <h2>Product Card</h2>
+    <div class="product-card">
+        <img src="https://temptindia.com/cdn/shop/files/Artboard1.png?v=1704273967">
+        <h3>Smart Watch</h3>
+        <p>Modern smart watch with health tracking.</p>
+        <button>Buy Now</button>
+    </div>
+</section>
+
+<!-- Q3 -->
+<section>
+    <h2>Modal Popup</h2>
+    <div style="text-align:center;">
+        <button class="open-modal-btn" onclick="openModal()">Open Modal</button>
+    </div>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h4>Modal Title</h4>
+                <button onclick="closeModal()">X</button>
+            </div>
+            <p>This is modal content.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Q4 -->
+<section>
+    <h2>Pricing Table</h2>
+    <div class="pricing">
+        <div class="plan">
+            <h3>Basic</h3>
+            <h2>$10</h2>
+            <ul>
+                <li>1 User</li>
+                <li>Basic Support</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+
+        <div class="plan premium">
+            <h3>Premium</h3>
+            <h2>$30</h2>
+            <ul>
+                <li>Unlimited Users</li>
+                <li>Priority Support</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+
+        <div class="plan">
+            <h3>Standard</h3>
+            <h2>$20</h2>
+            <ul>
+                <li>5 Users</li>
+                <li>Email Support</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+    </div>
+</section>
+
+<script>
+function openModal() {
+    document.getElementById("modal").style.display = "block";
+}
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+</script>
+
+</body>
+</html>

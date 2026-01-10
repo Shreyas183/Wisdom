@@ -20,7 +20,7 @@ body{
 .footer-yellow {
   display: flex;
   width: 50%;
-  background: #fff200;
+  /* background: #fff200; */
 }
 
 .footer-col {
@@ -42,13 +42,13 @@ body{
 
 .footer-red-block {
   width: 20%;
-  background: #ff1a00;
+  /* background: #ff1a00; */
 }
 
 
 .footer-newsletter {
   width: 30%;
-  background: purple;
+  /* background: purple; */
   padding: 15px 20px;
 }
 
@@ -83,7 +83,7 @@ body{
 
 
 .footer-bottom {
-  background: #ff1a00;
+  /* background: #ff1a00; */
   height: 110px;
   display: flex;
   justify-content: space-between;
